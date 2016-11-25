@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>메인</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script type="text/javascript">
+    
+  /*document.onreadystatechange = function(){
+    if(document.readyState != "interactive") return;
+    var bg= Math.floor(Math.random()*100*1)%5;
+    $('body').css('background', 'url("static/background/"+bg+".jpg)"');
+  }*/
+        window.addEventListener("load", function(){
+            document.body.style.backgroundImage = "url(../static/background/" + Math.floor(Math.random() * 5 + 1) + ".jpg)";
+        })
+</script>
+    <style>
+        body{
+            position: relative;
+            background-image.blur;
+            background-repeat: no-repeat;
+           
+        }
+        #bookicon{
+            position: absolute;
+            width: 550px;
+            height : 500px;
+            top : 100px;
+            left : 505px;
+            
+        }
+        *{margin: 0; padding: 0;}
+      a{text-decoration: none;}
+        li{list-style: none;
+        font-family: malgun gothic;}
+        
+        
+        #main_header{
+            font-family: malgun gothic;
+        width:100%; margin: 0 auto;
+        height: 60px; position: fixed;
+            background-color:#ffc000;
+        }
+        
+     
+        #main_header>#main_Lnb{
+            position: absolute;
+            bottom: 15px;
+        
+        }
+        
+       
+    </style>
+    
+    
+    <style>
+        #main_Lnb>ul{overflow: hidden;}
+        #main_Lnb>ul>li{float:left;}
+        #main_Lnb>ul>li>a{
+           
+            font-size: 20px;
+            color:white;
+           
+            padding: 10px 20px;
+            
+        }
+        #main_Lnb>ul>li>a:hover{
+            font-weight:bold;
+            background: #ffc000;
+            color: white;
+        }
+        #main_Lnb>ul>li:first-child>a{border-radius: 10px 0 0 10px}
+        #main_Lnb>ul>li:last-child>a{border-radius: 0 10px 10px 0}
+        
+    </style>
+
+    </head>
+    
+    <body>
+      <header id="main_header">
+          
+             
+                <nav id="main_Lnb">
+                <ul>
+            
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Major</a></li>
+                <li><a href="#">Chat</a></li>
+               
+               
+                </ul>
+               </nav>
+          <img id=bookicon src="../static/images/bookicon.png">
+             
+          
+        </header>
+    </body>
+</html>
